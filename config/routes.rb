@@ -1,4 +1,10 @@
 Magix8box::Application.routes.draw do
+  match 'random' => 'home#random', :as => :random
+
+  resources :advice
+
+  root :to => "home#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

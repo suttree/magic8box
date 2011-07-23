@@ -1,0 +1,17 @@
+<div id='form'>
+  <%= form_for @advice do |f| %>
+    <%= f.label :advice %>
+    <%= f.text_field :body %>
+    <br/>
+    <br/>
+    <%= f.label :your_name %>
+    <%= f.text_field :name %>
+    <br/>
+    <br/>
+    <%= f.label :your_url %>
+    <%= f.text_field :url %>
+    <br/>
+    <br/>
+    <%= f.submit 'Save', :disable_with => 'Saving...' %>
+  <% end %>
+</div>
